@@ -8,8 +8,8 @@ python train.py \
 --which_model_netG sid_unet_resize \
 --which_model_netD no_norm \
 --save_epoch_freq 1 \
---niter 20 \
---niter_decay 20 \
+--niter 10 \
+--niter_decay 10 \
 --pool_size 50 \
 --n_layers_D 5 \
 --loadSize 286 \
