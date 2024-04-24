@@ -1,0 +1,24 @@
+python train.py \
+--dataroot ../bdd100k_dataset \
+--checkpoints_dir ./checkpoints \
+--no_dropout \
+--name experimentA \
+--model cycle_gan \
+--dataset_mode unaligned \
+--which_model_netG sid_unet_resize \
+--which_model_netD no_norm \
+--save_epoch_freq 1 \
+--niter 20 \
+--niter_decay 20 \
+--pool_size 50 \
+--n_layers_D 5 \
+--loadSize 286 \
+--fineSize 256 \
+--resize_or_crop resize \
+--batchSize 2 \
+--no_flip \
+--tanh \
+--gpu_ids 0 \
+--n_mask 3 \
+--lambda_cycle 3.0 \
+--cycle_loss Edge
